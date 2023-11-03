@@ -2,15 +2,12 @@ package com.zzx.task.task;
 
 
 import cn.hutool.core.convert.Convert;
-import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.core.text.csv.CsvReader;
 import cn.hutool.core.text.csv.CsvUtil;
 import com.xxl.job.core.handler.annotation.XxlJob;
 import com.zzx.task.mapper.F560431Mapper;
-import com.zzx.task.mapper.F560533Mapper;
 import com.zzx.task.pojo.F560431;
-import com.zzx.task.pojo.F560533;
 import com.zzx.task.utils.SmbFileUtil;
 import jcifs.smb.SmbFile;
 import jcifs.smb.SmbFileInputStream;
@@ -28,7 +25,7 @@ import java.util.List;
 /**
  *
  *  从共享盘 路径\\172.16.6.20\file\BI\数据中心\正式开发文档\Script\PMGDataQVD\看板用数据
- *  读取 历史紧固件排程达成率.csv 数据写进Oracle数据库 F560431 表中，用户为proddta
+ *  读取 历史紧固件排程达成率.csv 数据写进Oracle数据库 F560431 表中
  *
  */
 @Component
