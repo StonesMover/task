@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzx.task.mapper.F560431Mapper">
+
+    <delete id="DeleteF560431">
+        delete from F560431
+    </delete>
+
+    <insert id="InsertF560431">
+        insert into F560431 (
+            medrid2,mesoqs,meuorg,medl01,medl02,meurc1
+        )values(
+         #{medrid2},#{mesoqs},#{meuorg},#{medl01},#{medl02},#{meurc1}
+               )
+    </insert>
+</mapper>
